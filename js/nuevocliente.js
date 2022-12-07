@@ -1,5 +1,6 @@
 
-import { mostrarAlerta } from './funciones.js'
+import { mostrarAlerta } from './funciones.js';
+import { novoCliente } from './API.js';
 
 (function(){
 
@@ -26,7 +27,7 @@ import { mostrarAlerta } from './funciones.js'
       return;
     }
 
-    console.log('Campos preenchidos corretamente!');
+    novoCliente(cliente);
       
   }
 
