@@ -20,3 +20,7 @@ export function mostrarAlerta(mensagem){
     }, 3000);
   }
 }
+
+export function validar(obj){
+  return !Object.values(obj).every(item => item !== '')
+}
